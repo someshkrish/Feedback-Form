@@ -35,6 +35,10 @@ body {
   .feedback-form {
     background-color: $form-color;
     padding: 2em 5em;
+    box-shadow: 0 1.6px 2.9px rgba(0, 0, 0, 0.038),
+      0 4.4px 8.1px rgba(0, 0, 0, 0.055), 0 10.6px 19.6px rgba(0, 0, 0, 0.072),
+      0 35px 65px rgba(0, 0, 0, 0.11);
+    border-radius: 1em;
 
     .form {
       font-weight: 700;
@@ -116,6 +120,18 @@ body {
     .feedback-form {
       margin: 1em;
       padding: 1em;
+
+      form {
+        .design-input {
+          width: 100%;
+        }
+        .submit {
+          .design-input-btn {
+            font-weight: 700;
+            font-size: 0.8em;
+          }
+        }
+      }
     }
   }
 }
