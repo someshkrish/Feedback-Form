@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: lowercase;
+  font-family: "Poppins", arial;
+}
+
+.design-input-btn:hover {
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  background-color: #faf8f8;
+  padding: 2em 5em;
+}
+
+body .feedback-form {
+  background-color: #ffffff;
+  padding: 2em 5em;
+}
+
+body .feedback-form .form {
+  font-weight: 700;
+  font-size: 1.3em;
+  margin: 0 0 1em 0;
+  color: #31db42;
+  text-transform: uppercase;
+}
+
+body .feedback-form form {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 1em;
+}
+
+body .feedback-form form label,
+body .feedback-form form p {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+body .feedback-form form .radio-btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .feedback-form form .radio-btns label {
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-left: 0.5em;
+}
+
+body .feedback-form form select,
+body .feedback-form form .name {
+  text-transform: capitalize;
+}
+
+body .feedback-form form textarea {
+  text-transform: none;
+}
+
+body .feedback-form form .design-input {
+  border-style: none;
+  background-color: #f2f2f2;
+  padding: 0.5em;
+}
+
+body .feedback-form form .submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 0.5em 0 0 0;
+}
+
+body .feedback-form form .submit .design-input-btn {
+  border-style: none;
+  background-color: #31db42;
+  color: white;
+  padding: 0.5em;
+  border-radius: 1em;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  width: 25%;
+  left: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 662px) {
+  * {
+    padding: 0;
+  }
+  body {
+    padding: 0;
+  }
+  body .feedback-form {
+    margin: 1em;
+    padding: 3em;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    padding: 5em 10em;
+  }
+  body .feedback-form {
+    padding: 3em 5em;
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  body {
+    padding: 5em 10em;
+  }
+  body .feedback-form {
+    padding: 5em 10em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

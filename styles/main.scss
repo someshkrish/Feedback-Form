@@ -1,0 +1,141 @@
+$body-color: #faf8f8;
+$form-color: #ffffff;
+$input-box-color: #f2f2f2;
+$button-color: #31db42;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: lowercase;
+  font-family: "Poppins", arial;
+}
+
+.design-input-btn:hover {
+  transform: scale(1.1, 1.1);
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+body {
+  background-color: $body-color;
+  padding: 2em 5em;
+
+  .feedback-form {
+    background-color: $form-color;
+    padding: 2em 5em;
+
+    .form {
+      font-weight: 700;
+      font-size: 1.3em;
+      margin: 0 0 1em 0;
+      color: $button-color;
+      text-transform: uppercase;
+    }
+
+    form {
+      display: grid;
+      grid-row-gap: 1em;
+
+      label,
+      p {
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+
+      .radio-btns {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: start;
+        align-items: center;
+
+        label {
+          text-transform: capitalize;
+          font-weight: 300;
+          margin-left: 0.5em;
+        }
+      }
+
+      select,
+      .name {
+        text-transform: capitalize;
+      }
+
+      textarea {
+        text-transform: none;
+      }
+
+      .design-input {
+        border-style: none;
+        background-color: $input-box-color;
+        padding: 0.5em;
+      }
+
+      .submit {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0.5em 0 0 0;
+
+        .design-input-btn {
+          border-style: none;
+          background-color: $button-color;
+          color: white;
+          padding: 0.5em;
+          border-radius: 1em;
+          font-weight: 700;
+          font-size: 1em;
+          text-transform: uppercase;
+          width: 25%;
+          left: 0;
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  * {
+    padding: 0;
+  }
+
+  body {
+    padding: 0;
+
+    .feedback-form {
+      margin: 1em;
+      padding: 3em;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  body {
+    padding: 5em 10em;
+
+    .feedback-form {
+      padding: 3em 5em;
+    }
+  }
+}
+
+@media only screen and (min-width: 1120px) {
+  body {
+    padding: 5em 10em;
+
+    .feedback-form {
+      padding: 5em 10em;
+    }
+  }
+}
